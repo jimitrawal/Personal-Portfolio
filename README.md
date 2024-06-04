@@ -11,7 +11,6 @@ Bootstrap website for showcasing personal projects and achievements.
 - Interactive Bootstrap carousel for highlighting featured projects.
 - Fully responsive layout ensuring seamless viewing across all devices.
 - Stylish and user-friendly forms and input elements.
-- Carousel testimonials to present feedback and endorsements from clients or colleagues.
 - Integrated contact form using Formspree.
 
 ## Usage
