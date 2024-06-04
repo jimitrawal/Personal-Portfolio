@@ -2,7 +2,7 @@
 
 Bootstrap website for showcasing personal projects and achievements.
 
-<img src="./images/Thumbnail.png"  />
+<img src="./Thumbnail.png"  />
 
 ## Features
 
