@@ -154,9 +154,9 @@ html, body {
     height: 60px;
     background-color: #ebe6e0;
     border-radius: 20px;
-    border-width: 5px;
-    border-color: #4c7766;
-    border-style: ridge;
+    border-width: 10px;
+    border-color: antiquewhite;
+    border-style:ridge;
     position: absolute;
     box-shadow: 0px 0px 2px antiquewhite, 0 0 4px antiquewhite, 0 0 8px antiquewhite, 0 0 16px antiquewhite;
     bottom: 30px;
@@ -168,9 +168,9 @@ html, body {
     height: 15px;
     background-color: #ebe6e0;
     border-radius: 50px;
-    border-width: 4px;
-    border-color: #4c7766;
-    border-style: ridge;
+    border-width: 8px;
+    border-color: antiquewhite;
+    border-style:ridge;
     position: absolute;
     left: 7.5px;
     bottom: 15px;
@@ -316,8 +316,7 @@ html, body {
     box-shadow: 0 0 10px 5px #5e7175; /*feedback?*/
     border-radius: inherit;
 }
-
-.proj {
+.proj{
     background-color: #ebe6e0;
 }
 
@@ -331,7 +330,6 @@ html, body {
     justify-content: center;
     padding-bottom: 10px;
     overflow: hidden;
-    position: relative;
 }
 
 .proj-title {
@@ -353,19 +351,8 @@ html, body {
     margin-inline: 10px;
     border-width: 5px;
     font-size: 40px;
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    opacity: 0;
 }
-
-.proj-box i {
-    color: #4c7766; /* Color of the GitHub logo, adjust as necessary */
-    margin-right: 0px;
-}
-
-.proj-box:hover {
+.proj-box:hover{
     background-color: rgb(208, 189, 164);
 }
 
