@@ -362,7 +362,7 @@ html, body {
 
 .proj-box i {
     color: #4c7766; /* Color of the GitHub logo, adjust as necessary */
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .proj-box:hover {
