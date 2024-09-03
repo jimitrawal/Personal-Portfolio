@@ -686,4 +686,8 @@ html, body {
         font-size: 30px;
     }
 }
-
+@media(max-width: 320px){
+    .letter{
+        font-size:60px;
+    }
+}
