@@ -250,6 +250,7 @@ html, body {
 
 .lang-but:hover {
     background-color: antiquewhite;
+    cursor: default;
 }
 
 .lang-name {
