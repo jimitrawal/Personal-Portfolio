@@ -99,8 +99,39 @@ html, body {
     font-weight: 300;
     color: #4c7766;
     padding-bottom: 40px;
+    animation: changeWords 12s infinite;
+    opacity: 0;
+    position: absolute;
 }
 
+.heads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.subtitle:nth-child(1) {
+    animation-delay: 0s;
+}
+.subtitle:nth-child(2) {
+    animation-delay: 4s;
+}
+.subtitle:nth-child(3) {
+    animation-delay: 8s;
+}
+@keyframes changeWords {
+    0%, 50%{
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+  }
 .name .letter {
     display: inline-block;
     opacity: 0;
@@ -353,15 +384,15 @@ html, body {
     margin-inline: 10px;
     border-width: 5px;
     font-size: 40px;
-    position: absolute;
-    left: 50%;
+    position: relative;
+    /*left: 50%;
     bottom: 20px;
-    transform: translateX(-50%);
+    transform: translateX(-50%);*/
     opacity: 0;
 }
 .proj-box i {
-    color: #4c7766; /* Color of the GitHub logo, adjust as necessary */
-    margin-right: 0px;
+    color: #4c7766; 
+    margin-right: 35px;
 }
 .proj-box:hover {
     background-color: rgb(208, 189, 164);
@@ -624,7 +655,7 @@ html, body {
         text-align: center;
     }
     .proj-img.col-md-12 {
-        padding-top: 15px;
+        padding-top: 85px;
         border: 2px solid #4a6469;
         justify-content: center;
         align-items: center;
@@ -682,5 +713,8 @@ html, body {
         width: 50px;
         height: 50px;
         font-size: 30px;
+    }
+    .proj-box i{
+        margin-right: 25px;
     }
 }
