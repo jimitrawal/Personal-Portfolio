@@ -79,7 +79,8 @@ html, body {
 .resume {
     align-items: center;
     justify-content: center;
-    font-weight: 400;
+    font-weight:bold;
+    text-align: center;
 }
 
 .name {
@@ -210,13 +211,17 @@ html, body {
 
 .my-works {
     border-color: #4c7766;
+    border-radius: 25%;
     border-width: 5px;
     width: auto;
     color: #4c7766;
     background-color: antiquewhite;
-    height: auto;
+    height: 50px;
+    display: flex;
+    padding-top: 10px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .my-works:hover {
