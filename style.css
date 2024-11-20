@@ -333,20 +333,12 @@ html, body {
     border-style: ridge;
     align-items: center;
     border-radius: 10%;
+    background: linear-gradient(145deg, #fbf6f0, #d4cfca);
+    box-shadow:  21px 21px 54px #b0ada8,
+                 -21px -21px 54px #ffffff;
 }
 
-.image .back {
-    position: absolute;
-    top: -170px;
-    left: 0px;
-    z-index: 1;
-    opacity: 0;
-    animation: fadeInBackground 10s forwards;
-    width: 400px;
-    height: auto;
-    box-shadow: 0 0 10px 5px #5e7175; /*feedback?*/
-    border-radius: inherit;
-}
+
 .proj {
     background-color: #ebe6e0;
 }
@@ -361,7 +353,7 @@ html, body {
     justify-content: center;
     padding-bottom: 10px;
     overflow: hidden;
-    position: relative; /* Ensures hover content is positioned relative to the project item */
+    position: relative; 
 }
 
 .proj-title {
@@ -418,8 +410,15 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );   
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: aliceblue;
+    font-weight: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,18 +535,7 @@ html, body {
 }
 
 @media (max-width: 991px) {
-    .image .back {
-        position: absolute;
-        top: -131px;
-        left: 0px;
-        z-index: 1;
-        opacity: 0;
-        animation: fadeInBackground 10s forwards;
-        width: 255px;
-        height: auto;
-        box-shadow: 0 0 10px 5px #5e7175; /*feedback?*/
-        border-radius: inherit;
-    }
+    
     .image .fore {
         position: absolute;
         top: -130px;
