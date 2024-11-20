@@ -328,12 +328,11 @@ html, body {
 }
 
 .image .fore {
-    position: absolute; /*make relative*/
-    top: -170px;
-    left: 5px;
+    position: relative; /*make relative*/
     border-width: 15px;
     border-style: ridge;
     align-items: center;
+    border-radius: 10%;
 }
 
 .image .back {
