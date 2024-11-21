@@ -98,6 +98,7 @@ html, body {
 
 .name-2 {
     font-size: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*responsive?/*/
@@ -105,6 +106,7 @@ html, body {
 .subtitle {
     font-size: 35px;
     font-weight: 300;
+    font-family:'Poppins', sans-serif;
     color: #4c7766;
     padding-bottom: 40px;
     animation: changeWords 12s infinite;
@@ -235,12 +237,6 @@ html, body {
     background-color: rgb(208, 189, 164);
 }
 
-.shape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .img {
     height: auto;
     width: auto;
@@ -276,11 +272,6 @@ html, body {
     background: #ebe6e0;
     justify-content: space-between;
     padding-bottom: 100px;
-}
-
-.lang {
-    justify-content: center;
-    align-items: center;
 }
 
 .lang-but {
