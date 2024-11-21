@@ -447,7 +447,7 @@ html, body {
     border-radius: 10%;
     border: 2px solid #91d7bb;
     background-color: #4c7766;
-    color: #ebe6e0;
+    color: #E8E8E8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -469,12 +469,12 @@ html, body {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #72a28f;
-    color: antiquewhite;
+    color: #1a341a;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: antiquewhite;
+    color: #1a341a;
 }
 
 .contact-form button {
