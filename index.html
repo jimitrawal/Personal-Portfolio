@@ -28,7 +28,7 @@
                     <a class="nav-link" href="index.html">HOME</a>
                 </button>
                 <button class="nav-button">
-                    <a class="nav-link" href="#about">ABOUT ME</a>
+                    <a class="nav-link" href="#experience">ABOUT ME</a>
                 </button>
                 <button class="nav-button">
                     <a class="nav-link" href="#tech-skills">TECHNICAL SKILLS</a>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="#about">
+                        <a href="#experience">
                             <button class="scroll-down" aria-label="Down">
                                 <div class="scroll-down-ball"></div>
                             </button>
@@ -100,22 +100,44 @@
                 </div>
             </section>
 
-            <section class="about" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 about-me">
-                            <h2 class="heading-about fw-bold text-center">ABOUT ME</h2>
+            <section class="experience-section" id="experience">
+                <h2 class="experience-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="images/phc.jpeg" alt="PHC Logo" class="timeline-logo">
+                                <h3>Project: Human City</h3>
+                            </div>
+                            <p class="timeline-role">A.I Developer Intern</p>
+                            <p class="timeline-dates">May 2024 - Aug 2024</p>
+                            <p class="timeline-details">
+                                Fine-tuned Large Language Models (LLMs) using Retrieval-Augmented Generation (RAG) techniques, enhancing the chatbot's response relevance and accuracy for diverse queries.<br><br>
+                                Built and optimized data ingestion pipelines with LlamaIndex and Pinecone, improving retrieval efficiency by reducing query response times by up to 27%<br><br>
+                                Worked with cross-functional teams to integrate the chatbot into existing platforms.
+                            </p>
                         </div>
-                        <div class="vert-line"></div>
-                        <div class="col-md-6">
-                            <p class="about-text text-center">I am a computer science student at Toronto Metropolitan University with a passion for software development and artificial intelligence. I am eager to apply my knowledge and skills in real-world projects and contribute to innovative solutions. <br>I gained valuable hands-on experience as a Front-End Developer during my internship at Canadian Contractor Services and as an A.I. Developer Intern with Project: Human City. <br><br>Feel free to view my projects through GitHub and connect with me on LinkedIn for networking opportunities and to learn more about my work. <br><br>Thank you for visiting my portfolio!</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="images/CCS-Logo.png" alt="CCS Logo" class="timeline-logo">
+                                <h3>Canadian Contractor Services</h3>
+                            </div>
+                            <p class="timeline-role">Lead Front-End Developer Intern</p>
+                            <p class="timeline-dates">Feb 2024 - May 2024</p>
+                            <p class="timeline-details">
+                                Implemented responsive and accessible web designs using Bootstrap and SASS, reducing bounce rates by 25%.<br><br>
+                                Boosted SEO rankings and performance metrics to 90+ website Lighthouse score for both desktop and mobile by implementing best practices for accessibility.<br><br>
+                                Collaborated with clients to incorporate their feedback into the website design, iteratively refining UI/UX designs to meet end-user expectations.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-
+            
         <section class="tech-skills" id="tech-skills">
-            <h2 class="heading fw-bold text-center">TECHNICAL SKILLS</h2>
+            <h2 class="experience-title text-center">TECHNICAL SKILLS</h2>
             <div class="container">
                 <div class="row">
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
@@ -126,7 +148,7 @@
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="Java">
-                            <img class="lang" src="images/java.png" width="90%" height="auto" alt="JavaLogo">
+                            <img class="lang" src="images/java-original.svg" width="90%" height="auto" alt="JavaLogo">
                         </button>
                         <h4 class="lang-name">Java</h4>
                     </div>
@@ -143,8 +165,14 @@
                         <h4 class="lang-name">C++</h4>
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
+                        <button class="lang-but" aria-label="Bash">
+                            <img class="lang" src="images/bash-original.svg" width="90%" height="auto" alt="BootstrapLogo">
+                        </button>
+                        <h4 class="lang-name">Bash</h4>
+                    </div>
+                    <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="HTML">
-                            <img class="lang" src="images/html-92b76a73.png" width="90%" height="auto" alt="HTMLLogo">
+                            <img class="lang" src="images/html5-original.svg" width="80%" height="auto" alt="HTMLLogo">
                         </button>
                         <h4 class="lang-name">HTML</h4>
                     </div>
@@ -162,25 +190,25 @@
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="Javascript">
-                            <img class="lang" src="images/js.png" width="70%" height="auto" alt="JSLogo">
+                            <img class="lang" src="images/js.png" width="65%" height="auto" alt="JSLogo">
                         </button>
                         <h4 class="lang-name">Javascript</h4>
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="React">
-                            <img class="lang" src="images/react.png" width="90%" height="auto" alt="ReactLogo">
+                            <img class="lang" src="images/react-original.svg" width="90%" height="auto" alt="ReactLogo">
                         </button>
                         <h4 class="lang-name">React.js</h4>
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="Node">
-                            <img class="lang" src="images/node.png" width="100%" height="auto" alt="NodeLogo">
+                            <img class="lang" src="images/nodejs-original.svg" width="100%" height="auto" alt="NodeLogo">
                         </button>
                         <h4 class="lang-name">Node.js</h4>
                     </div>
                     <div class="langs col-md-3 d-flex flex-column align-items-center">
                         <button class="lang-but" aria-label="SASS">
-                            <img class="lang" src="images/icons8-sass-48.png" width="80%" height="auto" alt="SASSLogo">
+                            <img class="lang" src="images/sass-original.svg" width="80%" height="auto" alt="SASSLogo">
                         </button>
                         <h4 class="lang-name">SASS</h4>
                     </div>
@@ -189,7 +217,7 @@
         </section>
 
             <section class="proj" id="proj">
-                <h2 class="heading fw-bold text-center">PROJECTS</h2>
+                <h2 class="experience-title text-center">PROJECTS</h2>
                 <div class="container">
                     <div class="row">
                         <div class="project-item col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -268,7 +296,7 @@
 
         <section class="contact" id="contact">
             <div class="container">
-                <h2 class="heading fw-bold text-center">CONTACT ME</h2>
+                <h2 class="experience-title text-center">CONTACT ME</h2>
                 <div class="row justify content-center">
                     <div class="col-md-6 contact-form offset-md-3">
                         <form 
