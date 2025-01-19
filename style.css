@@ -555,6 +555,7 @@ html, body {
 
 .proj-title {
     padding-bottom: 20px;
+    margin-top: 10px;
     padding-top: 10px;
     font-size: 1.25rem;
     margin-bottom: 15px;
@@ -579,7 +580,7 @@ html, body {
 }
 .proj-box i {
     color: #4c7766; 
-    margin-right: 35px;
+    margin-right: 0px;
 }
 .proj-box:hover {
     background-color: rgb(208, 189, 164);
@@ -590,6 +591,7 @@ html, body {
     border: 2px solid #6fac94;
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .proj-link:hover .proj-box {
