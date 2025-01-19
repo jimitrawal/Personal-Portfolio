@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
-Dynamic and responsive bootstrap website for showcasing personal projects and achievements.
-
+A visually dynamic and fully responsive Bootstrap website to showcase personal projects, achievements, and milestones.
 <img src="./Thumbnail.png"  />
 Visit: https://jimitrawaldev.netlify.app
 
