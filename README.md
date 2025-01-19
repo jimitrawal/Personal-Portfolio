@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-Bootstrap website for showcasing personal projects and achievements.
+Dynamic bootstrap website for showcasing personal projects and achievements.
 
 <img src="./Thumbnail.png"  />
 
