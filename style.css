@@ -3,38 +3,36 @@ html, body {
     background-color: #ebe6e0;
     margin: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #4c7766;
 }
-
 .nav-item {
     display: flex;
     gap: 25px;
 }
-
 .nav-button {
     background-color: #4c7766;
-    border-width: 0px;
+    border-width: 0;
     padding-left: 1px;
     padding-right: 1px;
 }
-
 .nav-button:hover {
     text-decoration: none;
     color: #ebe6e0;
     border-width: 1px;
     border-color: aquamarine;
 }
-
 .nav-link:hover {
     text-decoration: none;
     color: antiquewhite;
+    transform: scale(1.05);
 }
-
 .nav-link {
     padding: auto;
     color: aliceblue;
@@ -43,24 +41,20 @@ html, body {
     padding-right: 1px;
     font-family: 'Montserrat', sans-serif;
 }
-
 .nav-name {
     margin-left: 10px;
-    font-weight:100;
+    font-weight: 100;
     font-size: 30px;
     font-family: 'Cinzel', serif;
 }
-
 .nav-toggle {
     display: none;
 }
-
 .nav-toggle-label {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
-
 .nav-toggle-label span {
     background-color: #ebe6e0;
     width: 25px;
@@ -232,7 +226,7 @@ html, body {
 }
 .scroll-down {
     width: 25px;
-    height: 60px;
+    height: 50px;
     background-color: #ebe6e0;
     border-radius: 20px;
     border-width: 5px;
@@ -252,8 +246,21 @@ html, body {
     border-style:ridge;
     position: absolute;
     left: 7.5px;
+    bottom: 10px;
     animation: moveUpDown 2s infinite; /*copy this styling for all sizes*/
 }
+@keyframes ballZoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.5);
+    }
+  }
+  .scroll-down-ball.clicked {
+    animation: ballZoom 0.5s forwards;
+  }
+  
 .my-works {
     border-color: #4c7766;
     border-radius: 25%;
@@ -725,17 +732,59 @@ html, body {
 }
 
 @media (max-width: 768px) {
+    .nav-item {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: #4c7766;
+        padding: 20px 0;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .nav-item.active {
+        display: flex; 
+    }
+    .nav-toggle-label {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .nav-toggle-label span {
+        background-color: #ebe6e0;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        transition: transform 0.3s;
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px);
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px);
+    }
     .scroll-down {
         position: absolute;
         right: 40px;
         bottom: 10px;
         animation: moveUpDown 2s infinite;
+        width: 17px;
+        height: 40px;
     }
     .scroll-down-ball {
         position: absolute;
-        left: 7px;
-        bottom: 15px;
+        left: 6px;
+        bottom: 10px;
         animation: moveUpDown 2s infinite;
+        width: 11px;
+        height: 11px;
     }
     /* ... */
     .image .fore {
@@ -879,12 +928,10 @@ html, body {
         margin: 0 0 0 30px; 
         font-size: 0.9rem; 
     }
-
     .timeline-dates,
     .timeline-details {
         font-size: 0.8rem; 
     }
-
     .timeline-logo {
         width: 40px; 
         height: 40px;
@@ -892,6 +939,9 @@ html, body {
 }
 
 @media (max-width: 425px) {
+    .nav-item{
+        width: 100%;
+    }
     .image {
         display: none;
     }
@@ -902,15 +952,21 @@ html, body {
         padding-top: 20px;
     }
     .scroll-down {
-        position:static;
+        position:absolute;
         box-shadow: 0px 0px 2px antiquewhite, 0 0 4px antiquewhite, 0 0 8px antiquewhite, 0 0 16px antiquewhite;
         animation: moveUpDown 2s infinite;
+        width: 15px;
+        height: 40px;
+        left:50%;
+        bottom:3px;
     }
     .scroll-down-ball {
-        position: absolute;
-        left: 7px;
+        position: static;
+        left: 7.5px;
         bottom: 15px;
         animation: moveUpDown 2s infinite;
+        width: 12px;
+        height: 12px;
     }
     .proj-title {
         font-size: 1rem;
@@ -972,5 +1028,9 @@ html, body {
     .social-button, .my-works {
         font-size: 14px;
         padding: 6px 14px;
+    }
+    .scroll-down {
+        position: absolute;
+        left:50%;
     }
 }
