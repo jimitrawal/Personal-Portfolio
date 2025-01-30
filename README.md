@@ -2,6 +2,7 @@
 
 A visually dynamic and fully responsive Bootstrap website to showcase personal projects, achievements, and milestones.
 <img src="./Thumbnail.png"  />
+<img src="./Thumbnail-Dark.png"  />
 Visit: https://jimitrawaldev.netlify.app
 
 
