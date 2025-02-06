@@ -9,6 +9,7 @@
     --but-bg: antiquewhite; 
     --but-hover:#3a5d4f;
     --border:antiquewhite;
+    --nav-link:#ebe6e0;
   }
   
   .dark-mode {
@@ -21,7 +22,7 @@
     --profile-ridge-b: #26332e;
     --but-bg:#E0F2E9;
     --but-hover:#2E7D32;
-    --nav-link:#92f1c1;
+    --nav-link:linear-gradient(to right, #92f1c1, #8ce2ff);
     --border:#91d7bb;
   }  
 
@@ -50,6 +51,7 @@ html, body {
     height: 34px;
     margin-top: 3px;
     margin-bottom: 3px;
+    mix-blend-mode: overlay; 
   }
   
   .switch input {
@@ -137,7 +139,10 @@ html, body {
     font-weight: 100;
     font-size: 30px;
     font-family: 'Cinzel', serif;
-    color:var(--nav-link);
+    /* color:var(--nav-link); */
+    background: var(--nav-link);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .nav-toggle {
     display: none;
@@ -164,10 +169,12 @@ html, body {
     flex-shrink: 0;
 }
 .logo img{
-    width: 45px;
+    width: 50px;
     height: auto;
     padding-left: 10px;
     animation: blur-glow 5s infinite linear;
+    mix-blend-mode:overlay; 
+    border-radius: 100px;
 }
 @keyframes blur-glow {
     30% { filter: blur(3px) drop-shadow(0 0 12px #CFA3FF); }
@@ -627,8 +634,12 @@ html, body {
 }
 
 .proj-img {
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: 2px solid #6fac94;
+    border-radius: 15px;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
