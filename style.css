@@ -10,6 +10,7 @@
     --but-hover:#3a5d4f;
     --border:antiquewhite;
     --nav-link:#ebe6e0;
+    --xc: #91d7bb;
   }
   
   .dark-mode {
@@ -24,6 +25,7 @@
     --but-hover:#2E7D32;
     --nav-link:linear-gradient(to right, #92f1c1, #8ce2ff);
     --border:#91d7bb;
+    --xc:#E0F2E9;
   }  
 
 html, body {
@@ -461,7 +463,9 @@ html, body {
     margin-bottom: 10px;
     color: #91d7bb;
 }
-
+.comp{
+    color: var(--xc);
+}
 .timeline-header {
     display: flex;
     align-items: center;
@@ -738,6 +742,11 @@ html, body {
     background-color: #4cae4c;
     box-shadow: 0px 0px 2px #4cae4c, 0 0 4px #4cae4c, 0 0 8px #4cae4c, 0 0 16px #4cae4c;
 }
+
+#name, #email, #message {
+    color: var(--xc);
+}
+
 
 .end {
     background-color: var(--nav-bg);
