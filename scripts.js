@@ -30,3 +30,14 @@ themeToggle.addEventListener('change', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const descriptionToggles = document.querySelectorAll('.description-toggle');
+
+    descriptionToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const details = this.parentNode.querySelector('.timeline-details');
+            details.classList.toggle('hidden');
+        });
+    });
+});
